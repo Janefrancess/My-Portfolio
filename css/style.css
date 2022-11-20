@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background-image: 
+    linear-gradient(to top, rgba(0,0,0,0.7)10%,rgba(0,0,0,0.7)10%),
+    url(../images/profile1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16%;
+    text-align: center;
+}
+
+.header .greeting{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.header .name{
+   color: white;
+   font-size: 70px;
+}
+
+.orange-text{
+    color: rgb(255, 72, 0);
+    font-size: 70px;
+}
+
+.header .intro-text{
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+}
+
+.nav-bar{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 3px;
+    margin-left: 25%;
+    transform: translateY(-30px);
+    box-shadow: 0 3px 3px 0 rgb(238, 238, 238);
+}
+
+.icon{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.nav-bar img{
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon:last-child{
+    border-right: none;
+}
