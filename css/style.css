@@ -13,7 +13,7 @@ body{
 .header{
     background-image: 
     linear-gradient(to top, rgba(0,0,0,0.7)10%,rgba(0,0,0,0.7)10%),
-    url(../images/profile1.jpeg);
+    url(../images/profile.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 16%;
@@ -53,7 +53,6 @@ body{
     margin-left: 25%;
     transform: translateY(-30px);
     box-shadow: 0 3px 3px 0 rgb(238, 238, 238);
-    position: fixed;
 }
 
 .icon{
@@ -71,4 +70,44 @@ body{
 
 .icon:last-child{
     border-right: none;
+}
+
+.profile{
+    display: flex;
+    grid-gap: 5rem;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.profile-picture{
+  width: 700px;
+  height: 700px;
+}
+
+.profile-content-intro{
+    padding-bottom: 30px;
+}
+
+.view-more{
+    margin-top: 30px;
+}
+
+.view-text{
+    color: #EF6D0A;
+    font-weight: bolder;
+}
+
+.view-link{
+    display: inline-flex;
+}
+
+.more-icon{
+    width: 23px;
+}
+
+.profile-content-detail{
+    padding: 20px 0 20px 0;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #EEEEEE;
 }
