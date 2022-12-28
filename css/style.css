@@ -50,16 +50,15 @@ body{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 3px;
-    margin-left: 25%;
+    margin: 0 auto;
     transform: translateY(-30px);
-    box-shadow: 0 3px 3px 0 rgb(238, 238, 238);
+    box-shadow: 2px 2px 5px 0 rgb(112, 112, 112);
 }
 
 .navbar.sticky{
     position: fixed;
-}
-#navbar.sticky{
-    position: fixed;
+    top: 30px;
+    transform: translateX(50%);
 }
 
 .icon{
@@ -68,15 +67,23 @@ body{
     border-right: 1px solid rgb(221, 221, 221);
 }
 
+.icon:last-child{
+    border-right: none;
+}
+
 .navbar img{
-    width: 30px;
+    width: 27px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.icon:last-child{
-    border-right: none;
+.navbar:hover .home{
+    content: url(../icons/port-active-home.png);
+    width: 27px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile{
@@ -134,4 +141,100 @@ body{
     font-weight: 500;
     color: #323334;
     margin: 20px 30px 0 0;
+}
+
+.socials-group{
+    display: flex;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+.socials-group a{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.socials-group a .fa{
+    font-size: 16px;
+    line-height: 40px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.socials-group a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -45px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.socials-group .facebook::after{
+    background-color: #3B5999;
+}
+
+.socials-group .twitter::after{
+    background-color: #00adef;
+}
+
+.socials-group .instagram::after{
+    background-color: #cc0001;
+}
+
+.socials-group .linkedin::after{
+    background-color: #0073b2;
+}
+
+.socials-group a:hover::after{
+    top: 0;
+}
+
+.socials-group a:hover .fa{
+    color: #fff;
+}
+
+.socials-group a:hover{
+    border: none;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .navbar.sticky{
+       position: unset;
+    }
+    .icon{
+        width: 10%;
+        padding: 2px;
+        border-right: none;
+    }
+    .icon img{
+        width: 23px;
+    }
+    .profile{
+        flex-wrap: wrap;
+        grid-gap: 2rem;
+    }
+    .profile > *{
+        width: 100%;
+    }
+    .detail-row{
+        flex-wrap: wrap;
+    }
+    .detail-row > *{
+        width: 100%;
+    }
 }

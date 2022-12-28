@@ -7,9 +7,10 @@ backDelay: 3000,
 });
 
 var navbar = document.getElementById("navbar");
+var profile = document.getElementById("profile");
 
 window.onscroll = function(){
-if(window.pageYOffset >= navbar.offsetTop){
+if(window.pageYOffset >= profile.offsetTop){
 navbar.classList.add("sticky");
 }else{
 navbar.classList.remove("sticky");
