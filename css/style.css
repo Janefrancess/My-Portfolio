@@ -13,7 +13,7 @@ body{
 .header{
     background-image: 
     linear-gradient(to top, rgba(0,0,0,0.7)10%,rgba(0,0,0,0.7)10%),
-    url(../images/profile.jpeg);
+    url(../images/profile1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 16%;
@@ -53,12 +53,15 @@ body{
     margin: 0 auto;
     transform: translateY(-30px);
     box-shadow: 2px 2px 5px 0 rgb(112, 112, 112);
+    scroll-behavior: smooth;
 }
 
 .navbar.sticky{
     position: fixed;
-    top: 30px;
-    transform: translateX(50%);
+    top: 50px;
+    right: 0;
+    left: 0;
+    z-index: 20;
 }
 
 .icon{
@@ -71,19 +74,21 @@ body{
     border-right: none;
 }
 
-.navbar img{
+.icon .nav-fab{
+    font-size: 30px;
+    font-weight: 100px;
+    color: #222;
     width: 27px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+.icon a{
+    text-decoration: none;
+}
 
-.navbar:hover .home{
-    content: url(../icons/port-active-home.png);
-    width: 27px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.icon.active .nav-fab{
+    color: #EF6D0A;
 }
 
 .profile{
@@ -93,12 +98,29 @@ body{
     margin: 60px auto;
 }
 
+.profile{
+    display: flex;
+    grid-gap: 7rem;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.profile-section{
+    width: 50%;
+}
+
 .profile-picture{
-  width: 40%;
+  max-width: 100%
 }
 
 .profile-content-intro{
     padding-bottom: 30px;
+}
+
+.profile-content-intro .description{
+    font-size: 15px;
+    line-height: 27px;
+    color: rgb(153, 153, 153);
 }
 
 .view-more{
@@ -131,7 +153,8 @@ body{
 
 .detail-row{
     display: flex;
-    gap: 5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
     font-size: 15px;
     color: rgb(153, 153, 153);
 }
@@ -162,7 +185,7 @@ body{
     overflow: hidden;
 }
 
-.socials-group a .fa{
+.socials-group a .fab{
     font-size: 16px;
     line-height: 40px;
     position: relative;
@@ -200,12 +223,102 @@ body{
     top: 0;
 }
 
-.socials-group a:hover .fa{
+.socials-group a:hover .fab{
     color: #fff;
 }
 
 .socials-group a:hover{
     border: none;
+}
+
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.tech .side-image{
+   width: 40%;
+}
+
+.tech-content{
+    background-color: #212529;
+    padding: 60px;
+    width: 60%;
+}
+
+.tech-content h1{
+    color: #fff;
+    font-size: 40px;
+    margin-left:  50px;
+    margin-bottom: 30px;
+}
+
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tech-stack img{
+    width: 190px;
+}
+
+
+.certification{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(45, 45, 61);
+    padding: 10px;
+}
+
+.certification img{
+    width: 100px;
+}
+
+.portfolio{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.portfolio h1{
+    font-weight: bolder;
+    color: rgb(48, 48, 48);
+    font-size: 40px;
+}
+
+.scrollby{
+    margin: 20px 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li{
+    padding: 10px;
+    color: #888;
+    font-weight: 500;
+}
+
+.project-display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+}
+
+.project img{
+    width: 400px;
 }
 
 @media screen and (max-width: 991px) {
@@ -237,4 +350,13 @@ body{
     .detail-row > *{
         width: 100%;
     }
+    .tech{
+        flex-direction: column;
+    }
+    .tech > *{
+        width: 100%;
+    }
+    .tech .side-image{
+        width: 100%;
+     }
 }

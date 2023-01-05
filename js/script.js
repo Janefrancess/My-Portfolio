@@ -16,3 +16,14 @@ navbar.classList.add("sticky");
 navbar.classList.remove("sticky");
 }
 }
+
+const list = document.querySelectorAll(".icon");
+    const sec = document.querySelectorAll(".section");
+    function activeMenu(){
+        let len = sec.length;
+        while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+        list.forEach(ltx => ltx.classList.remove("active"));
+        list[len].classList.add("active");
+    }
+    activeMenu();
+    window.addEventListener("scroll",activeMenu);
