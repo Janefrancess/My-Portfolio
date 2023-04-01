@@ -259,9 +259,10 @@ body{
 }
 
 .tech-stack{
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    row-gap: 2rem;
     justify-content: space-evenly;
     margin-top: 50px;
     width: 90%;
@@ -269,7 +270,12 @@ body{
 }
 
 .tech-stack img{
-    width: 190px;
+    width: 120px;
+    border: 2px solid #fff;
+    box-shadow:rgba(219, 210, 216, 0.4) 5px 5px, rgba(158, 137, 151, 0.3) 10px 10px, rgba(110, 93, 104, 0.2) 15px 15px, rgba(73, 49, 64, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 30px;
 }
 
 
