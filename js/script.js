@@ -25,5 +25,5 @@ const list = document.querySelectorAll(".icon");
         list.forEach(ltx => ltx.classList.remove("active"));
         list[len].classList.add("active");
     }
-    activeMenu();
-    window.addEventListener("scroll",activeMenu);
+activeMenu();
+window.addEventListener("scroll",activeMenu);

@@ -7,7 +7,11 @@
 <title>Portfolio Project</title>
 <!------ CSS ------>
 <link href="./css/style.css" rel="stylesheet">
+<link href="./css/slider.css" rel="stylesheet">
+<link href="./css/footer.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/320ee0437b.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.css">
 </head>
 <body>
 <div class="container">
@@ -15,6 +19,9 @@
 <h3 class="greeting">HELLO!</h3>
 <h2 class="name">I'm <span class="orange-text"></span></h2>
 <p class="intro-text">I'm a Frontend Web Developer & UI/UX designer. A Nigerian Female Lead<br> Technological Ambassador and Youth Innovator.</p>
+<div class="cv-download">
+  <button class="cv-btnn">Download Cv</button>
+</div>
 </div>
 
 <div class="navbar" id="navbar">
@@ -108,8 +115,8 @@
       </ul>
    </div>
    <div class="project-display">
-      <div class="project"><img src="./images/project3.jpg"></div>
-      <div class="project"><img src="./images/project2.jpg"></div>
+      <div class="project"><img src="./images/html-project.png"></div>
+      <div class="project"><img src="./images/React-project.png"></div>
       <div class="project"><img src="./images/project3.jpg"></div>
       <div class="project"><img src="./images/project3.jpg"></div>
       <div class="project"><img src="./images/project2.jpg"></div>
@@ -117,17 +124,98 @@
    </div>
 </div>
 
-<div class="section testimonial" id="testimonial"></div>
-
-<div class="section certification" id="certification">
- <div class="first-cert"><img src="./images/aws2.jpg"></div>
-  <div class="second-cert"><img src="./images/aws2.jpg"></div>
-  <div class="third-cert"><img src="./images/aws2.jpg"></div>
+<div class="section testimonial" id="testimonial">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+           <div class="row slider-text">
+               <div class="col-sm-6">
+                  <h3>Perfect product!</h3>
+                  <p>It is a long established fact that a reader will be distracted by the readable
+                  content of a page when looking at its layout. 
+                  Many desktop publishing packages and web page editors now use Lorem Ipsum as their default 
+                  model text, and a search for lorem ipsum will uncover.
+                  <br><span><img src=".https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                  </span><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                  </p> 
+                  <h6 class="name">Edward Kennedy</h6>
+                  <h6 class="tag">happy buyer</h6>
+               </div>
+               <div class="col-sm-6"><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/profile2.jpg"></div>
+           </div>
+      </div>
+      <div class="swiper-slide">
+           <div class="row slider-text">
+              <div class="col-sm-6">
+                <h3>Perfect product!</h3>
+                 <p>It is a long established fact that a reader will be distracted by the readable
+                 content of a page when looking at its layout. 
+                 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default 
+                  model text, and a search for lorem ipsum will uncover.
+                  <br><span><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                  </span><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                 </p>
+                  <h6 class="name">Sussan Barkley</h6>
+                  <h6 class="tag">happy buyer</h6>
+              </div>
+              <div class="col-sm-6"><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/profile1.jpg"></div>
+           </div>
+      </div>
+      <div class="swiper-slide">
+           <div class="row slider-text">
+              <div class="col-sm-6 ">
+                 <h3>Perfect product!</h3>
+                 <p>It is a long established fact that a reader will be distracted by the readable
+                 content of a page when looking at its layout. 
+                 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default 
+                  model text, and a search for lorem ipsum will uncover.
+                  <br><span><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                    <img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                  </span><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/star-rating.png" style="width: 15px; height:15px; display: inline; margin-top: 20px;">
+                 </p>
+                  <h6 class="name">Pamela Chris</h6>
+                  <h6 class="tag">happy buyer</h6>
+              </div>
+              <div class="col-sm-6"><img src="https://501112.fs1.hubspotusercontent-na1.net/hubfs/501112/Palesa/Real%20estate/screenshot/Elementor1/profile5.jpg"></div>
+           </div>
+      </div>
+    </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
 </div>
 
-<div class="section footer" id="footer"></div>
+<div class="section footer" id="footer">
+  <div class="form-text">
+    <h1>Get In Touch</h1>
+    <p>Send a message to connect with me</p>
+</div>
+<form>
+    <h2>Contact Us</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <input type="submit" value="Send">
+</form>
+</div>
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.js"></script>
+<script src="./js/slider.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="./js/script.js"></script>
 </body>

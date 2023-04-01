@@ -1,0 +1,42 @@
+.footer {
+    font-family: Arial, sans-serif;
+    background: rgb(45 45 61);
+    color: #fff;
+    margin-top: 70px;
+    padding: 30px;
+}
+form {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form-text{
+    text-align: center;
+}
+
+.form-text h2 {
+    font-size: 30px;
+}
+input[type=text], input[type=email], textarea {
+    padding: 10px;
+    width: 95%;
+    color: #fff;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #fff;
+}
+input[type=submit] {
+    background: #eeeef1;
+    color: #201e1e;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
