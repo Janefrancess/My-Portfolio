@@ -317,16 +317,12 @@ li{
     font-weight: 500;
 }
 
-.project{
-    
-}
-
 .project-display{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     column-gap: 10px;
-    grid-row-gap: 10px;
-    width: 100%;
+    grid-row-gap: 40px;
+    width: 100%
 }
 
 .project img{
@@ -335,11 +331,11 @@ li{
 
 .pro-btnn-group{
     margin-bottom: 40px;
-    padding-bottom: 10px;
+    padding: 20px 0 20px 0;
     border-left: 2px solid rgb(241, 241, 241);
     border-right: 2px solid rgb(241, 241, 241);
     border-bottom: 2px solid rgb(241, 241, 241);
-    width: 97%;
+    width: 96%;
     margin: 0 auto;
    
 }
@@ -347,6 +343,7 @@ li{
 .pro-btnn{
     background-color: #353b41;
     padding: 10px 25px;
+    border-radius: 3px;
     color: #e2e1e1;
     font-size: 17px;
     border: none;
