@@ -317,6 +317,10 @@ li{
     font-weight: 500;
 }
 
+.project{
+    
+}
+
 .project-display{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -327,6 +331,27 @@ li{
 
 .project img{
     width: 400px;
+}
+
+.pro-btnn-group{
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-left: 2px solid rgb(241, 241, 241);
+    border-right: 2px solid rgb(241, 241, 241);
+    border-bottom: 2px solid rgb(241, 241, 241);
+    width: 97%;
+    margin: 0 auto;
+   
+}
+
+.pro-btnn{
+    background-color: #353b41;
+    padding: 10px 25px;
+    color: #e2e1e1;
+    font-size: 17px;
+    border: none;
+    
+    cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
