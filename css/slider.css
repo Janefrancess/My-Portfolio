@@ -75,3 +75,18 @@ h3{
  .tag{
   color: darkgray;
  }
+
+ @media screen and (max-width: 767px) {
+  .testimonial{
+    width: 100%;
+    
+  }
+  .slider-text{
+    grid-template-columns: 1fr;
+  }
+  .swiper-slide.swiper-slide-active {
+    width: 100% !important;
+}
+  
+ }
+

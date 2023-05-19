@@ -42,6 +42,14 @@ body{
     font-size: 16px;
 }
 
+.header .medium-text{
+    display: none;
+}
+
+.header .bold-text{
+    color: white;
+}
+
 .cv-btnn{
     background-color: rgb(243 101 46);
     padding: 15px 25px;
@@ -270,7 +278,7 @@ body{
 
 .tech-stack{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     row-gap: 2rem;
     justify-content: space-evenly;
@@ -299,22 +307,7 @@ body{
     font-weight: bolder;
     color: rgb(48, 48, 48);
     font-size: 40px;
-}
-
-.scrollby{
-    margin: 20px 0;
-}
-
-ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-
-li{
-    padding: 10px;
-    color: #888;
-    font-weight: 500;
+    margin-bottom: 25px;
 }
 
 .project-display{
@@ -389,4 +382,45 @@ li{
     .tech .side-image{
         width: 100%;
      }
+     .header .name {
+        display: none;
+    }
+    .header .medium-text{
+        display: block;
+        color: rgb(255, 72, 0);
+        font-size: 42px;
+    }
+    .view-more {
+        display: none;
+    }
+    .portfolio, .project img, .pro-btnn-group {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tech-content {
+        padding: 35px;
+    }
+    .tech-stack{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.3rem;
+        row-gap: 0.2rem
+    }
+    .tech-content h1 {
+        margin-left: 0;
+    }
+    .portfolio, .project img, .pro-btnn-group {
+        width: 100%;
+    }
+    .icon .nav-fab {
+        font-size: 22px;
+    }
+    .header {
+        padding: 20% 5%;
+    }
+    .project-display{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
 }
