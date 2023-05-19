@@ -396,6 +396,9 @@ body{
     .portfolio, .project img, .pro-btnn-group {
         width: 100%;
     }
+    .navbar.sticky {
+        position: fixed;
+    }
 }
 
 @media screen and (max-width: 767px) {
