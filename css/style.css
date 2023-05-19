@@ -188,6 +188,10 @@ body{
     margin: 20px 30px 0 0;
 }
 
+.phone-num {
+    color: rgb(153, 153, 153);
+}
+
 .socials-group{
     display: flex;
     margin-top: 30px;
