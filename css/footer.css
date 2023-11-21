@@ -19,6 +19,11 @@ form h2{
 
 .form-text{
     text-align: center;
+    margin-top: 40px;
+}
+
+.form-text p{
+    margin-top: 10px;
 }
 
 .form-text h2 {
