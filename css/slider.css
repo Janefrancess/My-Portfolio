@@ -41,6 +41,10 @@
   margin-right: auto;
 }
 
+.swiper-button-next, .swiper-button-prev{
+  color: #353b41 !important;
+}
+
 .slider-text{
   margin-top: 20%;
   position: relative;

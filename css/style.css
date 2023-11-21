@@ -344,6 +344,20 @@ body{
     cursor: pointer;
 }
 
+.section.certificate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ef6d0a;
+    padding: 60px 0;
+    margin-top: 50px;
+}
+
+.section.certificate h1{
+    color: #e8af45;
+    font-size: 60px;
+}
+
 @media screen and (max-width: 991px) {
     .navbar{
         flex-wrap: wrap;
@@ -424,6 +438,12 @@ body{
     }
     .project-display{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .section.certificate {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 2rem;
+        margin-top: 30px;
     }
 
     
