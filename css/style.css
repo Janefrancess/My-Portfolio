@@ -318,6 +318,15 @@ body{
     width: 100%
 }
 
+.project h3{
+    margin-top: 20px;
+}
+
+.project .tech-used{
+    font-size: 12px; 
+    font-weight: 200;
+}
+
 .project img{
     width: 400px;
 }
