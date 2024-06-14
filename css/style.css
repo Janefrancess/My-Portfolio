@@ -209,6 +209,18 @@ a{
     margin: 20px 30px 0 0;
 }
 
+label:visited{
+    text-decoration: none;
+    cursor: pointer;
+    color: #323334;
+}
+
+label:active{
+    text-decoration: none;
+    cursor: pointer;
+    color: #323334;
+}
+
 .socials-group{
     display: flex;
     margin-top: 30px;
