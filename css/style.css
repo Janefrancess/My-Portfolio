@@ -50,6 +50,27 @@ body{
     color: white;
 }
 
+.cv-download a{
+    text-decoration: none;
+}
+
+.cv-download a:visited{
+    color: #fff;
+}
+
+a:visited{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: #323334;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
 .cv-btnn{
     background-color: rgb(243 101 46);
     padding: 15px 25px;
